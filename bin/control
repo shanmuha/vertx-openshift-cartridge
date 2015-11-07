@@ -65,7 +65,7 @@ function setup_hazelcast {
   OPENSHIFT_VERTX_PROXY_IP=$(ping -c 1 ${OPENSHIFT_GEAR_DNS} | awk '{ print $3 ; exit }' | sed 's/(//g' | sed 's/)//g')
 
   pushd $OPENSHIFT_VERTX_DIR > /dev/null
-      sed -i  -e "s/\${env.OPENSHIFT_VERTX_HAZELCAST_PROXY_PORT}/${OPENSHIFT_VERTX_HAZELCAST_PROXY_PORT}/g" \
+      sed -i  -e "s/\${env.OPENSHIFT_VERTX_HAZELCAST_PROXY_PORT}/${OPENSHIFT_VERTX_HAZELCAST_PORT}/g" \
               -e "s/\${env.OPENSHIFT_VERTX_HAZELCAST_PORT}/${OPENSHIFT_VERTX_HAZELCAST_PORT}/g" \
               -e "s/\${env.OPENSHIFT_VERTX_PROXY_IP}/${OPENSHIFT_VERTX_PROXY_IP}/g" \
               -e "s/\${env.OPENSHIFT_VERTX_IP}/${OPENSHIFT_VERTX_IP}/g" \
