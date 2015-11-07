@@ -5,9 +5,9 @@ Description: "Vert.x is a tool-kit for building reactive applications on the JVM
 Version: '3.0'
 License: ASL 2.0
 Vendor: Vert.x
-Cartridge-Version: 0.0.1
-Cartridge-Vendor: vertx
-Source-Url: https://github.com/vert-x3/vertx-openshift-cartridge.git
+Cartridge-Version: 0.0.2
+Cartridge-Vendor: shanmuha
+Source-Url: https://github.com/shanmuha/vertx-openshift-cartridge.git
 Categories:
   - service
   - web_framework
